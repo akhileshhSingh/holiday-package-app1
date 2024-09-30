@@ -2,6 +2,11 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { AUTH_TOKEN } from './auth'; // Your auth token
 import './HolidayPackageCard.css'; // Add a CSS file for styling
+import responseImage2 from './response2.jpg';
+import responseImage3 from './response3.jpg';
+import responseImage4 from './response4.jpg';
+import responseImage5 from './response5.jpg';
+import responseImage6 from './response6.jpg';
 
 const HolidayPackageCard = () => {
   const [packages, setPackages] = useState([]);
@@ -64,7 +69,7 @@ const HolidayPackageCard = () => {
               price_per: "per_couple",
               cab_name: "Teat",
               images: [
-                "http://172.105.55.211/images/holidaypackage/1000032901.jpg"
+                "https://i.imgur.com/qUiDWpU.jpeg"
               ],
               active: 1,
               created_at: "2024-07-17 06:35:47",
@@ -91,7 +96,7 @@ const HolidayPackageCard = () => {
               price_per: "per_couple",
               cab_name: null,
               images: [
-                "http://172.105.55.211/images/holidaypackage/1000032900.webp"
+                responseImage2
               ],
               active: 1,
               created_at: "2024-07-17 06:40:51",
@@ -118,7 +123,7 @@ const HolidayPackageCard = () => {
               price_per: "per_couple",
               cab_name: null,
               images: [
-                "http://172.105.55.211/images/holidaypackage/1722674498982574"
+                responseImage3
               ],
               active: 1,
               created_at: "2024-07-17 06:42:36",
@@ -141,7 +146,7 @@ const HolidayPackageCard = () => {
               price_per: "per_person",
               cab_name: null,
               images: [
-                "http://172.105.55.211/images/holidaypackage/1727454905779200"
+                responseImage4
               ],
               active: 1,
               created_at: "2024-09-27 16:35:05",
@@ -164,7 +169,7 @@ const HolidayPackageCard = () => {
               price_per: "per_person",
               cab_name: null,
               images: [
-                "http://172.105.55.211/images/holidaypackage/1727493798598195"
+                responseImage5
               ],
               active: 1,
               created_at: "2024-09-28 03:23:18",
@@ -189,7 +194,7 @@ const HolidayPackageCard = () => {
               price_per: "per_person",
               cab_name: "bdid",
               images: [
-                "http://172.105.55.211/images/holidaypackage/1727493935447343"
+                responseImage6
               ],
               active: 1,
               created_at: "2024-09-28 03:25:35",
