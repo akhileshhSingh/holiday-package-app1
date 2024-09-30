@@ -36,7 +36,7 @@ const HolidayPackageCard = () => {
               price_per: "per_person",
               cab_name: null,
               images: [
-                "http://172.105.55.211/images/holidaypackage/1722671597105483"
+                "https://i.imgur.com/1HpniEa.jpeg"
               ],
               active: 1,
               created_at: "2024-07-17 06:19:21",
