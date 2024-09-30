@@ -20,6 +20,7 @@ const HolidayPackageCard = () => {
           }
         );
         if (response.data && response.data.isSuccess && response.data.data.length > 0) {
+          console.log(response.data.data);
           setPackages(response.data.data); // Access the `data` array
         } else {
           setError('No packages found.');
@@ -44,6 +45,15 @@ const HolidayPackageCard = () => {
               <h3 className="card-title">{pkg.title}</h3>
               <p className="card-destination">Destination: {pkg.destination}</p>
               <p className="card-days">Number of Days: {pkg.no_of_days}</p>
+              <p className="card-price">Price: {pkg.price} {pkg.price_per}</p>
+              <p className="card-plan-type">Plan Type: {pkg.plan_type}</p>
+              
+              {/* Render images */}
+              <div className="images">
+                {pkg.images && pkg.images.length > 0 && pkg.images.map((image, index) => (
+                  <img key={index} src={image} alt={pkg.title} className="holiday-image" />
+                ))}
+              </div>
             </div>
           ))}
         </div>
